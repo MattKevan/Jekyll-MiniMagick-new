@@ -10,11 +10,11 @@ Presets are defined in `_config.yml` like so:
 ```
 mini_magick:
     thumbnail: # Preset name
-        source: images/originals # source directory
+        source: images/originals # source directory - change this to whatever you want
         destination: images/thumbnail # generated destination directory
-        resize: "100x70^" # standard imagemagick options
+        resize: "100x70^" # standard imagemagick options - you can chain multiple commands
         gravity: "center"
         extent: "100x70"
 ```
 
-This will scale and crop all images in images/originals to 100x70 pixels and save them in images/thumbnail.
+This will scale and crop all images in `images/originals` to 100x70 pixels and save them into `_site/images/thumbnail` on build.
