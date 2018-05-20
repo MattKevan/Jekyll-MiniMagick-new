@@ -19,4 +19,4 @@ mini_magick:
 
 This will scale and crop all images in `images/originals` to 100x70 pixels and save them into `_site/images/thumbnail` on build.
 
-See [here](https://www.kevan.tv/2016/10/17/automatic-image-resizing-with-jekyll-and-imagemagick.html) for full instructions
+See [here](https://www.kevan.tv/articles/automatic-image-resizing-with-jekyll-and-imagemagick/) for full instructions
