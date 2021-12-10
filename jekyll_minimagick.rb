@@ -20,6 +20,8 @@ module Jekyll
         @dst_dir = preset.delete('destination')
         @src_dir = preset.delete('source')
         @commands = preset
+        @relative_path = File.join(*[@dir, @name].compact)
+        @extname = File.extname(@name)
       end
 
       # Obtains source file path by substituting the preset's source directory

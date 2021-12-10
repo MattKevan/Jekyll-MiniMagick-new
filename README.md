@@ -3,7 +3,7 @@ MiniMagick integration for Jekyll
 
 This is an updated and working version of [zroger's Ruby Gem](https://github.com/zroger/jekyll-minimagick), integrating new features and bugfixes from pull requests and the issue queue which haven't yet made their way back into the code.
 
-Put the file in your `_plugins` folder and add the jekyll-minimagick dependency to your config. You'll also need ImageMagick itself.
+Put the file in your `_plugins` folder, add `gem "mini_magick"` to your gemfile and run `bundle install`. You'll also need ImageMagick itself.
 
 Presets are defined in `_config.yml` like so:
 
@@ -19,4 +19,3 @@ mini_magick:
 
 This will scale and crop all images in `images/originals` to 100x70 pixels and save them into `_site/images/thumbnail` on build.
 
-See [here](https://www.kevan.tv/articles/automatic-image-resizing-with-jekyll-and-imagemagick/) for full instructions
